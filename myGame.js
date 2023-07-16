@@ -1,6 +1,7 @@
 document.body.style.margin = "0";
 document.body.style.padding = "0";
 document.body.style.boxSizing = "border-box";
+document.body.style.fontSize = "20px";
 document.body.style.fontFamily = "'Arial', sans-serif";
 
 
@@ -32,6 +33,7 @@ button2.onclick = function() {
 
 divButtons.appendChild(button1);
 divButtons.appendChild(button2);
+
 
 var divScreens = document.createElement("div");
 divScreens.style.border = "1px solid black";
@@ -98,3 +100,13 @@ document.addEventListener("keydown", function(event) {
   }
 });
 
+var style = document.createElement('style');
+style.innerHTML = `
+  @media (max-width: 600px), (orientation: portrait) {
+    button {
+      font-size: 40px;
+      padding: 30px 60px;
+    }
+  }
+`;
+document.head.appendChild(style);
