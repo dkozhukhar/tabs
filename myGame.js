@@ -104,7 +104,7 @@ var style = document.createElement('style');
 style.innerHTML = `
   @media (max-width: 600px), (orientation: portrait) {
     button {
-      font-size: 40px;
+      font-size: 100px;
       padding: 30px 60px;
     }
   }
